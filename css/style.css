@@ -1,36 +1,61 @@
-h2, p{
-  color: grey;
+body {
+  background-color: CCCCCC;
+}
+
+#container {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 
-#container{
-  width: 600px;
-  margin: 0 auto;
+.textBox  {
+  color: grey;
+  font-size: 12px;
+
 }
 
-.image{
-  background-size:cover;
-  width: 250px;
-  height: 300px;
-  background-position: center;
-  margin-left: 110px;
-}
-#one{
-background-image:url(../img/san-francisco.jpg);
-text-align: center;
-margin-top: 80px;
-}
-#two{
-  background-image: url(../img/new-york.jpg);
-}
-#three{
-  background-image: url(../img/london.jpg);
-}
-.div1{
- display: block;
+.imageRow {
+
 }
 
-.bar{
+.imageContainer  {
+  display: inline-block;
+  width: 150px;
+  height: 200px;
+
+  text-align: center;
+  vertical-align: middle;
+
+  position: relative;
+}
+
+.imageContainer h3 {
+  margin: 0;
+  line-height: 150px;
+  color: white;
+}
+
+.imageContainer img {
   position: absolute;
-  left: 500px;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 180px;
+  z-index: -1;
+}
+
+.buttonContainer  {
+  text-align: center;
+
+}
+
+
+.clear {
+    clear: both;
+}
+
+
+#SF {
+    background-image: "img/san-francisco.jpg";
 }
